@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Digital Group | Web Design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #17243a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #101d35;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: #69a8ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #101d35, #174b83);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 7vw, 58px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+      color: #dce9ff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #3987f5;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .intro {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #17243a12;
+    }
+
+    .card h3 {
+      color: #175ca8;
+      margin-bottom: 10px;
+    }
+
+    .projects {
+      background: #eaf1fa;
+    }
+
+    .contact {
+      text-align: center;
+      background: #101d35;
+      color: white;
+    }
+
+    .contact p {
+      margin: 12px 0 22px;
+    }
+
+    footer {
+      background: #091326;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 18px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .hero {
+        padding: 75px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">APEX DIGITAL GROUP</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Build Your Digital Presence.</h1>
+    <p>We create modern, responsive websites that help businesses present their brands online.</p>
+    <a class="btn" href="#projects">Explore Our Work</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Apex</h2>
+    <p class="intro">
+      Apex Digital Group is a web design and development portfolio
+      focused on creating clean, accessible and mobile-friendly
+      websites for businesses and individuals.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Clean and attractive website layouts for your brand.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Responsive websites built with HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Website Updates</h3>
+        <p>Helpful improvements to existing websites and pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="section-title">Our Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Bella Roma</h3>
+        <p>A sample restaurant website concept.</p>
+      </div>
+      <div class="card">
+        <h3>Apex Supermarket</h3>
+        <p>A sample supermarket product catalogue concept.</p>
+      </div>
+      <div class="card">
+        <h3>Apex Digital Group</h3>
+        <p>Our own agency portfolio website.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Let's Work Together</h2>
+    <p>Have a website idea? Get in touch to discuss your project.</p>
+    <a class="btn" href="mailto:YOUR-EMAIL@example.com">Email Us</a>
+  </section>
+
+  <footer>
+    © 2026 Apex Digital Group. Portfolio project.
+  </footer>
+
+</body>
+</html>
